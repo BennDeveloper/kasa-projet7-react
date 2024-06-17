@@ -1,0 +1,24 @@
+
+.banner {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    place-items: center;
+    color: white;
+    position: relative; 
+    overflow: hidden; 
+}
+
+.banner img {
+    
+    min-height: 140px;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.banner h1 {
+    padding: 30px;
+    position: absolute;
+    z-index: 1; 
+}

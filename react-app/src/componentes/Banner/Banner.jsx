@@ -1,10 +1,11 @@
 import React from 'react'
 import "./Banner.css";
 
-function Banner() {
+function Banner({image, title}) {
   return (
   <div className='banner'>
-    <h1>Chez vous, partout et ailleurs</h1>
+    <img src={image} alt="bannière" />
+    <h1>{title}</h1>
   </div>
   )
 }
