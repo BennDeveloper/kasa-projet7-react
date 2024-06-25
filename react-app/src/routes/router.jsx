@@ -1,8 +1,11 @@
 import React from "react";
 import { createBrowserRouter } from "react-router-dom";
-import App from "../App"
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
+
+
+import HomePage from "../HomePage";
+import Navbar from "../componentes/Navbar/Navbar";
+import Footer from "../componentes/Footer/Footer";
+import About from "../pages/about";
 
 
 
@@ -14,7 +17,7 @@ export const router = createBrowserRouter([
     element:(
         <>
           <Navbar />
-            <App />
+            <HomePage />
           <Footer />
         </>
     ),
@@ -34,10 +37,9 @@ export const router = createBrowserRouter([
     path: "/about",
 
     element:(
-        <>
-      
-      <Footer />
-      </>
+      <HeaderFooterLayout>
+      <About />
+    </HeaderFooterLayout>
       ),
   },
 ]);

@@ -3,12 +3,12 @@ import Navbar from './componentes/Navbar/Navbar'
 import Banner from './componentes/Banner/Banner'
 import AppartmentGrid from './componentes/ApartmentGrid/ApartmentGrid'
 import Footer from './componentes/Footer/Footer'
-import "./App.css"
+import "./HomePage.css"
 import Main from './componentes/Main/Main'
 import HomeBanner from "../src/assets/images/banner.png";
 
 
-function App() {
+function HomePage() {
   return (
     <div>
       <Main>
@@ -21,4 +21,4 @@ function App() {
   )
 }
 
-export default App
+export default HomePage
