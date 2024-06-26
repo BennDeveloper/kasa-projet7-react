@@ -26,3 +26,11 @@ a{
 .navbar *:first-child{
     margin-right: auto;
 }
+
+@media screen and (max-width: 768px) {
+    .navbar{
+        text-transform: uppercase;
+        font-size: small;
+    }
+    
+}
