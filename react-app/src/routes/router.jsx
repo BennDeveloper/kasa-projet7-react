@@ -6,9 +6,11 @@ import React from "react";
 import { createBrowserRouter, Outlet } from "react-router-dom";
 import HomePage from "../HomePage";
 import Footer from "../layout/Footer/Footer";
-import Navbar from "../layout/Navbar/Navbar";
+import Navbar from "../componentes/Navbar/Navbar";
 import Main from "../layout/Main/Main";
 import ApartmentPage from "../pages/ApartmentPage/ApartmentPage";
+import About from "../pages/About/About";
+
 
 
 
@@ -41,12 +43,9 @@ export const router = createBrowserRouter([
       },
       {
        path: "/about",
-       element:<h1>A propos</h1>
+       element:<About />
+       
       },
-      {
-        path: "/about",
-        element:<h1>A propos</h1>
-       },
       
     ],
     

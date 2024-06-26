@@ -2,7 +2,8 @@
 .apartment__Equipements{
     color: #ffff;
     font-weight: 700;
-    width: 50%;
+    width: 100%;
+    padding-top: 30px;
 }
 
 .Equipements__header{

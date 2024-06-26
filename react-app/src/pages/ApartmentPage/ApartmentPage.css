@@ -5,6 +5,7 @@
 .apartment__description__area{
     display: flex;
     gap: 15px ;
+   
 }
 @media screen and (max-width: 768px) {
     .apartment__description__area{
