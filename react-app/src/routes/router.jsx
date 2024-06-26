@@ -5,9 +5,10 @@
 import React from "react";
 import { createBrowserRouter, Outlet } from "react-router-dom";
 import HomePage from "../HomePage";
-import Footer from "../componentes/Footer/Footer";
-import Navbar from "../componentes/Navbar/Navbar";
-import Main from "../componentes/Main/Main";
+import Footer from "../layout/Footer/Footer";
+import Navbar from "../layout/Navbar/Navbar";
+import Main from "../layout/Main/Main";
+import ApartmentPage from "../pages/ApartmentPage/ApartmentPage";
 
 
 
@@ -36,12 +37,17 @@ export const router = createBrowserRouter([
       },
       {
         path: "/flat",
-        element:<h1>Appartement</h1>
+        element:<ApartmentPage />
       },
       {
        path: "/about",
        element:<h1>A propos</h1>
-      }
+      },
+      {
+        path: "/about",
+        element:<h1>A propos</h1>
+       },
+      
     ],
     
   },
