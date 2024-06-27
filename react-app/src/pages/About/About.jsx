@@ -1,8 +1,9 @@
 import React from 'react'
 import Banner from '../../layout/Banner/Banner'
-import { ApartmentDescription } from '../../componentes/ApartmentDescription/ApartmentDescription'
+import { DescriptionPanel } from '../../componentes/ApartmentDescription/DescriptionPanel'
 import  AboutBanner from '../../assets/images/banner2.png'
 import './About.css'
+import { ApartmentsEquipements } from '../../componentes/ApartmentEquipements/ApartmentEquipements'
 
 
 
@@ -12,10 +13,9 @@ function about() {
     <>
       <Banner image={AboutBanner} />
       <div className='About__container'>
-         <ApartmentDescription />
-         <ApartmentDescription />
-         <ApartmentDescription />
-         <ApartmentDescription />
+         <DescriptionPanel />
+         <ApartmentsEquipements />
+         
       </div>
     </>
   )

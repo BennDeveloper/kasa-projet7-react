@@ -10,6 +10,7 @@ import Navbar from "../componentes/Navbar/Navbar";
 import Main from "../layout/Main/Main";
 import ApartmentPage from "../pages/ApartmentPage/ApartmentPage";
 import About from "../pages/About/About";
+import { ErrorPage } from "../pages/ErrorPage/ErrorPage";
 
 
 
@@ -31,7 +32,7 @@ const HeaderFooterLayout = () => {
 export const router = createBrowserRouter([
   {
     element:<HeaderFooterLayout />,
-      errorElement: <h1>404 Oups! La page que vous demandez n'existe pas.</h1>,
+      errorElement: <ErrorPage />,
       children:[
       {
         path: "/",

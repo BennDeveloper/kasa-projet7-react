@@ -1,6 +1,6 @@
 import React from 'react';
 import './ApartmentPage.css'
-import { ApartmentDescription } from '../../componentes/ApartmentDescription/ApartmentDescription';
+import { DescriptionPanel} from '../../componentes/ApartmentDescription/DescriptionPanel';
 import { ApartmentsEquipements } from '../../componentes/ApartmentEquipements/ApartmentEquipements';
 import { ApartmentBanner } from '../../componentes/ApartmentBanner/ApartmentBanner';
 import { ApartmentHeader } from '../../componentes/ApartmentHeader/ApartmentHeader';
@@ -13,7 +13,7 @@ function ApartmentPage() {
       <ApartmentHeader />
  
       <div className="apartment__description__area">
-         <ApartmentDescription />
+         <DescriptionPanel />
          <ApartmentsEquipements />
       </div>
       

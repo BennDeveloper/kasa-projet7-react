@@ -2,7 +2,7 @@
 
 
 
-.apartment__description{
+.description__panel{
     color: #ffff;
     font-weight: 700;
     width: 100%;
@@ -28,10 +28,4 @@
     position: relative;
     top: -4px;
     z-index: -1;
-}
-@media screen and (max-width: 768px) {
-    .apartment__description{
-        width: 100%;
-    }
-    
 }

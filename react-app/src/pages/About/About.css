@@ -4,3 +4,10 @@
 .About__container{
     padding-inline: 70px;
 }
+
+@media screen and (max-width: 768px) {
+    .About__container{
+        padding-inline: 0rem;
+    }
+    
+}

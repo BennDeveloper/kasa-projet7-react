@@ -1,0 +1,39 @@
+
+
+.error-page{
+    color:#FF6060 ;
+    text-align: center;
+
+}
+
+.error-page h1{
+    font-size: 12rem ;
+    margin: 50px 0px  70px 0px;
+}
+
+
+.error-page h2{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 80px;
+}
+
+.error-page a{
+    text-decoration: underline;
+}
+
+
+
+@media screen and (max-width: 768px) {
+   
+    .error-page h1{
+        font-size: 5rem ;
+    }
+    
+    
+    .error-page h2{
+        font-size: 1rem;
+        font-weight: 500;
+        margin-bottom: 80px;
+    }
+}
