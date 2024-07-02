@@ -4,9 +4,13 @@
 
 .apartment__description__area{
     display: flex;
-    gap: 15px ;
-   
+    gap: 15px ; 
 }
+
+div li{
+    list-style-type: none;
+}
+
 @media screen and (max-width: 768px) {
     .apartment__description__area{
         flex-direction: column;

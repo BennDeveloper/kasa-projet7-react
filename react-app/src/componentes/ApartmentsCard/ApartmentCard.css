@@ -19,7 +19,7 @@
  }
 
 .apartment__subtitle{
-    width: 30%;
+    width: 100%;
     padding: 10px;
     color: white;
     position: absolute;
@@ -29,6 +29,12 @@
 @media screen and (width <= 768px) {
     .apartment {
      flex-basis:100%;
-     
+     min-width: 180px;
+    height: 250px;
     }
+
+    .apartment img {
+        width: 330px;
+        height: 250px;
+     }
  }
