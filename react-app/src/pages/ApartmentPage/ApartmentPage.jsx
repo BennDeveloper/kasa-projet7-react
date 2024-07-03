@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './ApartmentPage.css'
-import { DescriptionPanel} from '../../componentes/ApartmentDescription/DescriptionPanel';
-import { ApartmentsEquipements } from '../../componentes/ApartmentEquipements/ApartmentEquipements';
+import { DescriptionPanel } from '../../componentes/ApartmentDescription/DescriptionPanel';
 import { ApartmentBanner } from '../../componentes/ApartmentBanner/ApartmentBanner';
 import { ApartmentHeader } from '../../componentes/ApartmentHeader/ApartmentHeader';
 import { Link, useLocation, useSearchParams } from 'react-router-dom';
@@ -34,7 +33,7 @@ if (flat == null) return <div>loading...</div>
  
       <div className="apartment__description__area">
          <DescriptionPanel title="Description" content={flat.description} />
-         <ApartmentsEquipements title="Equipements" content={flat.equipments.map(eqpn => <li>{eqpn}</li>)} />
+         <DescriptionPanel title="Equipements" content={flat.equipments.map((eqpn, index) => <li key={index}>{eqpn}</li>)} />
       </div>
       
     </div>
