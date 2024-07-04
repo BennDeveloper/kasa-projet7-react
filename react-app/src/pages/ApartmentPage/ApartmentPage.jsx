@@ -1,28 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './ApartmentPage.css'
 import { DescriptionPanel } from '../../componentes/ApartmentDescription/DescriptionPanel';
 import { ApartmentBanner } from '../../componentes/ApartmentBanner/ApartmentBanner';
 import { ApartmentHeader } from '../../componentes/ApartmentHeader/ApartmentHeader';
-import { Link, useLocation, useSearchParams } from 'react-router-dom';
-import { useEffect } from 'react';
+import { useApartment } from '../../hooks/useApartment';
 
 
 
 function ApartmentPage() {
+const flat = useApartment();
 
-const location = useLocation();
-const [flat, setFlat] = useState(null);
-useEffect(fetchApartmentData, []);
-
-function fetchApartmentData() {
-  fetch("Back-end.json")                 
-      .then((res) => res.json())            
-      .then((flats) => {
-        const flat = flats.find((flat) => flat.id === location.state.apartmentId);
-        setFlat(flat);
-      })  
-      .catch(console.error);
-}
 
 if (flat == null) return <div>loading...</div>
 

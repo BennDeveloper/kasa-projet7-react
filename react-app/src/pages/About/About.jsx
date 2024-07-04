@@ -1,10 +1,7 @@
 import React from 'react'
 import Banner from '../../layout/Banner/Banner'
-
 import  AboutBanner from '../../assets/images/banner2.png'
 import './About.css'
-
-import Collapse from '../../componentes/Collapse/Collapse'
 import { DescriptionPanel } from '../../componentes/ApartmentDescription/DescriptionPanel'
 
 

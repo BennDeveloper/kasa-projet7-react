@@ -1,0 +1,14 @@
+
+
+.apartment__owner__stars {
+    display: flex;
+    justify-content: end;
+    font-size: 35px; 
+    position: relative;
+    color: #E3E3E3;
+    
+}
+
+.apartment__owner__stars .on{
+    color: #FF6060;
+}
