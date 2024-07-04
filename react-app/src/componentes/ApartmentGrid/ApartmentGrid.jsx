@@ -26,7 +26,7 @@ function ApartmentGrid() {                           // Définir le composant fo
   return (
     <div className='grid'>
         {apartments.map((apartment)=> (                                                //Parcourir les appartements et rendre une ApartmentCard pour chaque appartement
-             <ApartmentCard title={apartment.title} imageUrl={apartment.cover} id={apartment.id} />      //Passer les propriétés title et imageUrl au composant ApartmentCard
+             <ApartmentCard key={apartment.id} title={apartment.title} imageUrl={apartment.cover} id={apartment.id} />      //Passer les propriétés title et imageUrl au composant ApartmentCard
       ))}
     </div>
   )

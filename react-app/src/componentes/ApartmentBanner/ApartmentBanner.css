@@ -1,10 +1,64 @@
 
+.apartment__banner{
+    position: relative;
+    margin-bottom: 40px;
+}
 
-
-.apartment__banner img{
+.image__container{
+    height: 20rem;
     width: 100%;
-    height: 350px;
+    position: relative;
+}
+   
+.image__container img{
+    position: absolute;
+    width: 100%;
+    height: 310px;
+    inset: 0;
     object-fit: cover;
     border-radius: 25px;
     margin-bottom: 5px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.apartment__banner .show {
+    opacity: 1;
+}
+
+.apartment__banner .btn-Previous{
+    position: absolute;
+    cursor: pointer;
+    top: 0 ;
+    bottom: 0;
+    width: 50px;
+    height: 310px;
+    background: transparent;
+    color: #ffff;
+    font-size: xx-large;
+    border-width: 0;
+}
+
+.apartment__banner .btn-next{
+    position: absolute;
+    cursor: pointer;
+    top: 0 ;
+    bottom: 0;
+    width: 50px;
+    height: 310px;
+    background: transparent;
+    color: #ffff;
+    font-size: xx-large;
+    border-width: 0;
+    right: 0;
+}
+
+.apartment__banner .slide-counter{
+    position: absolute;
+    width: 100%;
+    font-size: 15px;
+    bottom: 15px;
+    text-align: center;
+    color: white;
+
 }
