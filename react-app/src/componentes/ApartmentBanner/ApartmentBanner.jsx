@@ -1,6 +1,4 @@
 
-
-
 import React , { useState }  from 'react';
 import "./ApartmentBanner.css";
 
@@ -29,6 +27,22 @@ const mouveToPrevious = () => {
   setCurrentPicture(currentPicture - 1);
 };
 
+  let arrowLeft;
+  let arrowRight;
+  let countPictures;
+
+  if(pictures.length > 1){
+    arrowLeft = <button className='btn-Previous' onClick={mouveToPrevious}>
+                    <i className='fas fa-chevron-left'></i>
+                </button> ;
+    arrowRight = <button className='btn-next' onClick={mouveToNext}>
+                    <i className='fas fa-chevron-right'></i>
+                </button>;
+    countPictures = <span className='slide-counter'>
+                        {currentPicture + 1} / {pictures.length}
+                    </span>
+  }
+
   return (
     <div className="apartment__banner">
 
@@ -39,18 +53,9 @@ const mouveToPrevious = () => {
       ))}
     
       </div>
-
-             <button className='btn-Previous' onClick={mouveToPrevious}>
-                <i className='fas fa-chevron-left'></i>
-             </button>
-             <span className='slide-counter'>
-                {currentPicture + 1} / {pictures.length}
-             </span>
-             <button className='btn-next' onClick={mouveToNext}>
-                <i className='fas fa-chevron-right'></i>
-             </button>
-
-
+          {arrowLeft}
+          {countPictures}
+          {arrowRight}
       </div>
 
   );

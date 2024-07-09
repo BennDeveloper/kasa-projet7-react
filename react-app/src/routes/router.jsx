@@ -1,10 +1,7 @@
 
-
-
-
 import React from "react";
-import { createBrowserRouter, Outlet } from "react-router-dom";
-import HomePage from "../HomePage";
+import {createBrowserRouter,  Outlet } from 'react-router-dom'
+import HomePage from "../pages/HomePage/HomePage";
 import Footer from "../layout/Footer/Footer";
 import Navbar from "../componentes/Navbar/Navbar";
 import Main from "../layout/Main/Main";
@@ -29,17 +26,18 @@ const HeaderFooterLayout = () => {
 
 
 
-export const router = createBrowserRouter([
+
+export const router = createBrowserRouter([ /*(createBrowserRouter,) fonction qui nous retourne quelque chose qu'on met dans la variable (router) resum : router = quand on tape une URL dfferent il nous rammène sur un composant different */
   {
     element:<HeaderFooterLayout />,
-      errorElement: <ErrorPage />,
+     
       children:[
       {
         path: "/",
         element: <HomePage />
       },
       {
-        path: "/flat",
+        path: "/flat/:flatId",
         element:<ApartmentPage />
       },
       {
@@ -47,6 +45,12 @@ export const router = createBrowserRouter([
        element:<About />
        
       },
+      {
+        path: "*",
+        element:<ErrorPage />
+        
+       },
+
       
     ],
     

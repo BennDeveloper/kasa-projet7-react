@@ -1,6 +1,6 @@
 import React from 'react'
 import './ApartmentHeader.css'
-import ApartmentTitle from '../ApartmentTitle/ApartmentTitle';
+import TitleSubTitle from '../TitleSubTitle/TitleSubTitle';
 import { OwnerDetails } from '../OwnerDetails/OwnerDetails';
 import { OwnerStars } from '../OwnerStars/OwnerStars';
 
@@ -12,7 +12,7 @@ const flat = props.flat;
   return (
     <div className='apartment__header'>
 
-       <ApartmentTitle flat={flat} />
+       <TitleSubTitle title={flat.title} subtitle={flat.location} />
      
      <div className='apartment__owner'>
 
