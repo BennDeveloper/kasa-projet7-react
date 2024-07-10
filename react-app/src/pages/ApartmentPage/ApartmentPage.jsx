@@ -2,10 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import './ApartmentPage.css';
 import { DescriptionPanel } from '../../componentes/DescriptionPanel/DescriptionPanel';
-import { ApartmentBanner } from '../../componentes/ApartmentBanner/ApartmentBanner';
-import { ApartmentHeader } from '../../componentes/ApartmentHeader/ApartmentHeader';
+import { ApartmentBanner } from '../../componentes/Banner/Banner';
+import { ApartmentHeader } from '../../componentes/Header/Header';
 import {ErrorPage } from '../ErrorPage/ErrorPage';
-import TitleSubTitle from '../../componentes/TitleSubTitle/TitleSubTitle';
 
 function ApartmentPage() {
   const { flatId } = useParams();

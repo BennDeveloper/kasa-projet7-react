@@ -1,6 +1,6 @@
 
 import React , { useState }  from 'react';
-import "./ApartmentBanner.css";
+import "./Banner.css";
 
 export function ApartmentBanner(props) {
 

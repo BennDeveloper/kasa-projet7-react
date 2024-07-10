@@ -1,7 +1,7 @@
 import React from 'react'
 import "./HomePage.css"
 import Banner from './../../layout/Banner/Banner'
-import AppartmentGrid from './../../componentes/ApartmentGrid/ApartmentGrid'
+import AppartmentGrid from '../../componentes/Grid/Grid'
 import HomeBanner from "./../../../src/assets/images/banner.png";
 
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import './ApartmentHeader.css'
+import './Header.css'
 import TitleSubTitle from '../TitleSubTitle/TitleSubTitle';
 import { OwnerDetails } from '../OwnerDetails/OwnerDetails';
 import { OwnerStars } from '../OwnerStars/OwnerStars';

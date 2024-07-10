@@ -1,6 +1,6 @@
 import React from 'react';
-import './ApartmentGrid.css';
-import ApartmentCard from '../ApartmentsCard/ApartmentCard';
+import './Grid.css';
+import ApartmentCard from '../Card/ApartmentCard';
 import { useApartments } from '../../hooks/useApartments';
 
 
