@@ -1,6 +1,7 @@
 
 
 .Apartment-Page h1{
+    font-size: 35px;
     font-weight: 500;
     color: #FF6060;
     margin-bottom: 0px;
@@ -15,19 +16,24 @@
 }
 
 
-.Apartment__tag{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 100px));
-    gap: 5px;
-}
 
-.Apartment__tag span {
-    text-align: center;
-    background-color:  #FF6060;
-    color: #ffff;
-    font-size: small;
-    font-weight: 500;
-    padding: 5px;
-    margin-bottom: 10px;
-    border-radius: 8px;  
+@media screen and (max-width: 768px) {
+
+
+    .Apartment-Page h1{
+        font-size: 25px;
+        font-weight: 500;
+        color: #FF6060;
+        margin-bottom: 0px;
+        margin-block: 0;
+       
+    }
+    .Apartment-Page h2{
+        font-weight: 600;
+        font-size: medium;
+        margin-bottom: 15px;
+        margin-top: 0px;
+    }
+   
+    
 }

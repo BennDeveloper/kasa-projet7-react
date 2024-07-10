@@ -3,6 +3,8 @@ import './ApartmentHeader.css'
 import TitleSubTitle from '../TitleSubTitle/TitleSubTitle';
 import { OwnerDetails } from '../OwnerDetails/OwnerDetails';
 import { OwnerStars } from '../OwnerStars/OwnerStars';
+import Tags from '../Tags/Tags';
+
 
 
 export function ApartmentHeader(props) {
@@ -10,18 +12,21 @@ export function ApartmentHeader(props) {
 const flat = props.flat;
 
   return (
+
     <div className='apartment__header'>
-
-       <TitleSubTitle title={flat.title} subtitle={flat.location} />
-     
-     <div className='apartment__owner'>
-
-      <OwnerDetails  flat={flat}  />
       
-      <OwnerStars flat={flat}  />
-     
-     </div>
-  </div>
+      <div className='titleAndOwner'>
+          <TitleSubTitle title={flat.title} subtitle={flat.location} />
+          <Tags tags={flat.tags} />
+      </div>
+
+      <div className='apartment__owner'>
+          <OwnerDetails  flat={flat}  />
+          <OwnerStars flat={flat}  />
+      </div>
+      
+       
+    </div>
   )
 }
 

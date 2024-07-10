@@ -5,6 +5,7 @@ import { DescriptionPanel } from '../../componentes/DescriptionPanel/Description
 import { ApartmentBanner } from '../../componentes/ApartmentBanner/ApartmentBanner';
 import { ApartmentHeader } from '../../componentes/ApartmentHeader/ApartmentHeader';
 import {ErrorPage } from '../ErrorPage/ErrorPage';
+import TitleSubTitle from '../../componentes/TitleSubTitle/TitleSubTitle';
 
 function ApartmentPage() {
   const { flatId } = useParams();
@@ -62,3 +63,8 @@ function ApartmentPage() {
 }
 
 export default ApartmentPage;
+
+
+
+
+
