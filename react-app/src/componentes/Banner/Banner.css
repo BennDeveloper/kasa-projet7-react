@@ -5,7 +5,7 @@
 }
 
 .image__container{
-    height: 20rem;
+    height: 415px;
     width: 100%;
     position: relative;
 }
@@ -13,7 +13,7 @@
 .image__container img{
     position: absolute;
     width: 100%;
-    height: 310px;
+    height: 415px;
     inset: 0;
     object-fit: cover;
     border-radius: 25px;
@@ -32,7 +32,7 @@
     top: 0 ;
     bottom: 0;
     width: 50px;
-    height: 310px;
+    height: 415px;
     background: transparent;
     color: #ffff;
     font-size: xx-large;
@@ -45,7 +45,7 @@
     top: 0 ;
     bottom: 0;
     width: 50px;
-    height: 310px;
+    height: 415px;
     background: transparent;
     color: #ffff;
     font-size: xx-large;
@@ -62,3 +62,29 @@
     color: white;
 
 }
+@media screen and (width <= 768px) {
+    .image__container{
+        height: 335px;
+        width: 100%;
+        
+    }
+       
+    .image__container img{
+       
+        width: 100%;
+        height: 335px;
+    }
+
+    .apartment__banner .btn-Previous{
+        height: 335px;
+    }
+    
+    .apartment__banner .btn-next{
+        height: 335px;
+    }
+
+    .countPictures{
+        display: none;
+    }
+    
+ }

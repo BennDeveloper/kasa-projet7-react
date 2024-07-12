@@ -1,18 +1,18 @@
 import React from 'react';
 import './Grid.css';
-import ApartmentCard from '../Card/ApartmentCard';
+import Card from '../Card/Card';
 import { useApartments } from '../../hooks/useApartments';
 
 
 
-function ApartmentGrid() {                         
+function Grid() {                         
 
   const apartments = useApartments ();
 
   return (
     <div className='grid'>
-        {apartments.map((apartment)=> (                                                //Parcourir les appartements et rendre une ApartmentCard pour chaque appartement
-             <ApartmentCard 
+        {apartments.map((apartment)=> (       //Parcourir les appartements et rendre une ApartmentCard pour chaque appartement
+             <Card 
              key={apartment.id} 
              title={apartment.title} 
              imageUrl={apartment.cover} 
@@ -22,4 +22,4 @@ function ApartmentGrid() {
   )
 }
 
-export default ApartmentGrid
+export default Grid

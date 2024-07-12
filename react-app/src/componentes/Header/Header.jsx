@@ -7,7 +7,7 @@ import Tags from '../Tags/Tags';
 
 
 
-export function ApartmentHeader(props) {
+export function Header(props) {
   
 const flat = props.flat;
 

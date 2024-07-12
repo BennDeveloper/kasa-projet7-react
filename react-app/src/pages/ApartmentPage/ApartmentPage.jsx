@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import './ApartmentPage.css';
 import { DescriptionPanel } from '../../componentes/DescriptionPanel/DescriptionPanel';
-import { ApartmentBanner } from '../../componentes/Banner/Banner';
-import { ApartmentHeader } from '../../componentes/Header/Header';
+import { Banner } from '../../componentes/Banner/Banner';
+import { Header } from '../../componentes/Header/Header';
 import {ErrorPage } from '../ErrorPage/ErrorPage';
 
 function ApartmentPage() {
@@ -48,8 +48,8 @@ function ApartmentPage() {
  
   return (
     <div className='Apartment-Page'>
-      <ApartmentBanner pictures={flat.pictures} /> {/* Assure-toi que flat.pictures contient bien les images */}
-      <ApartmentHeader flat={flat} />
+      <Banner pictures={flat.pictures} /> {/* Assure-toi que flat.pictures contient bien les images */}
+      <Header flat={flat} />
       <div className="apartment__description__area">
         <DescriptionPanel title="Description" content={flat.description} />
         <DescriptionPanel

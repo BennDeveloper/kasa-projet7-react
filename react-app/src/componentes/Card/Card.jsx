@@ -1,13 +1,8 @@
 import React from 'react'
-import './ApartmentCard.css'
+import './Card.css'
 import { Link } from "react-router-dom"
 
-function Apartment(props) {
- 
-const state = {
-    
-};
-
+function Card(props) {
   return (
     
     <Link to={`/flat/${props.id}`} >
@@ -21,4 +16,4 @@ const state = {
   )
 }
 
-export default Apartment
+export default Card

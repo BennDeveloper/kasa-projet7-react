@@ -2,7 +2,7 @@
 import React , { useState }  from 'react';
 import "./Banner.css";
 
-export function ApartmentBanner(props) {
+export function Banner(props) {
 
 const pictures = props.pictures;
 
@@ -54,7 +54,9 @@ const mouveToPrevious = () => {
     
       </div>
           {arrowLeft}
+          <div className='countPictures'>
           {countPictures}
+          </div>
           {arrowRight}
       </div>
 
