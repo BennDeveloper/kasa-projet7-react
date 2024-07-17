@@ -7,12 +7,12 @@ import { useApartments } from '../../hooks/useApartments';
 
 function Grid() {                         
 
-  const apartments = useApartments ();
+  const apartments = useApartments ();         //  déclare une constante apps qui contient les appartements récup par le hook useApartments.
 
   return (
     <div className='grid'>
-        {apartments.map((apartment)=> (       //Parcourir les appartements et rendre une ApartmentCard pour chaque appartement
-             <Card 
+        {apartments.map((apartment)=> (       //maper sur apartments (arry) pour chaque apartment retourner une <cart + les props/>
+             <Card      //     /     //  /   // une <cart + les props/>
              key={apartment.id} 
              title={apartment.title} 
              imageUrl={apartment.cover} 

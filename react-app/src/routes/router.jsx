@@ -12,12 +12,12 @@ import { ErrorPage } from "../pages/ErrorPage/ErrorPage";
 
 
 
-const HeaderFooterLayout = () => {
+const HeaderFooterLayout = () => {     /* fonction qui nous renvoie */
   return (
     <>
       <Navbar />
       <Main>
-        <Outlet />
+        <Outlet />          {/*il injecte les composants children dans une route imbriquée. */}
       </Main>
       <Footer />
     </>
@@ -27,7 +27,7 @@ const HeaderFooterLayout = () => {
 
 
 
-export const router = createBrowserRouter([ /*(createBrowserRouter,) fonction qui nous retourne quelque chose qu'on met dans la variable (router) resum : router = quand on tape une URL dfferent il nous rammène sur un composant different */
+export const router = createBrowserRouter([   /*(createBrowserRouter,) fonction qui nous retourne quelque chose qu'on met dans la variable (router) resum : router = quand on tape une URL dfferent il nous rammène sur un composant different */
   {
     element:<HeaderFooterLayout />,
      
